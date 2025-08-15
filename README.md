@@ -1,6 +1,16 @@
 # ESO-trade-mon
 Monitor game items price drop and send alert
 
+## Installation
+
+To use this script, you need to have Python 3.x installed on your system. You can download the latest version of Python from the official website: "https://www.python.org/downloads/"
+
+You also need to install the Requests and BeautifulSoup libraries. You can install them using pip, the Python package manager, by running the following command in your terminal:
+
+```bash
+pip install requests beautifulsoup4
+```
+
 ## Usage
 
 ```python
