@@ -1,0 +1,45 @@
+esosearches:
+  - itemName: "BrairDagg"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=briarheart&ItemCategory1ID=0&ItemCategory2ID=0&ItemCategory3ID=3&ItemTraitID=2&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=35000"
+    priceThershold : 35000
+    minThershold : 23    
+
+  - itemName: "HarbingerImpen"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=8521&ItemNamePattern=Shield+of+the+Harbinger&ItemCategory1ID=1&ItemCategory2ID=5&ItemTraitID=9&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=50000"
+    priceThershold : 50000
+    minThershold : 23
+
+  - itemName: "ArcherMindBow"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Archer%27s+Mind&ItemCategory1ID=0&ItemCategory2ID=1&ItemCategory3ID=7&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=30000"
+    priceThershold : 30000
+    minThershold : 23
+
+  - itemName: "ShieldPotenta"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Shield+of+the+Potentates&ItemCategory1ID=1&ItemCategory2ID=5&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=40000"
+    priceThershold : 40000
+    minThershold : 23
+
+  - itemName: "Light Necro"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Necropotence&ItemCategory1ID=0&ItemCategory2ID=1&ItemCategory3ID=11&ItemTraitID=3&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=1&PriceMax=25000"
+    priceThershold : 25000
+    minThershold : 23    
+
+  - itemName: "Light Plague"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=Plague+Doctor&ItemCategory1ID=0&ItemCategory2ID=1&ItemCategory3ID=11&ItemTraitID=3&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=1&PriceMax=25000"
+    priceThershold : 25000
+    minThershold : 23    
+  
+  - itemName: "Light Dead-Water"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?SearchType=Sell&ItemID=&ItemNamePattern=dead-water%27s&ItemCategory1ID=0&ItemCategory2ID=1&ItemCategory3ID=11&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=90000"
+    priceThershold : 90000
+    minThershold : 23        
+    
+  - itemName: "Inferno"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?ItemID=&SearchType=Sell&ItemNamePattern=mother%27s+sorrow&ItemCategory1ID=0&ItemCategory2ID=1&ItemCategory3ID=9&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=160&LevelMax=810&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=31000"
+    priceThershold : 31000
+    minThershold : 23    
+    
+  - itemName: "Chromium"
+    url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?ItemID=17927&SearchType=Sell&ItemNamePattern=Chromium&ItemCategory1ID=&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=&LevelMax=&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=4000"
+    priceThershold : 4000
+    minThershold : 23
