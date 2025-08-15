@@ -1,5 +1,5 @@
 # ESO-trade-mon
-Monitor game items price drop and send alert
+Monitor multiple game items price drop and send alert
 
 ## Installation
 
