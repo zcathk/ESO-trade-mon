@@ -13,7 +13,7 @@ logFile = 'eso-trade-mon.log'
 logging.basicConfig( filename = logFile,filemode = 'w',level = logging.INFO,format = '%(asctime)s - %(levelname)s: %(message)s',\
                      datefmt = '%d/%I:%M:%S%p' )
 headers = {'User-Agent': 'Mozilla/5.0 (Linux; Android 10; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36'}
-logging.info('================= STARTING ==============')
+logging.info('================= LOG STARTING ==============')
 count = 0 
 while (count < len(data['esosearches'])):
     itemName = data['esosearches'][count]['itemName']

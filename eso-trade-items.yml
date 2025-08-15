@@ -36,7 +36,7 @@ esosearches:
     
   - itemName: "Inferno"
     url : "https://us.demo-tradecentre.local/pc/Trade/SearchResult?ItemID=&SearchType=Sell&ItemNamePattern=mother%27s+sorrow&ItemCategory1ID=0&ItemCategory2ID=1&ItemCategory3ID=9&ItemTraitID=&ItemQualityID=&IsChampionPoint=false&LevelMin=160&LevelMax=810&MasterWritVoucherMin=&MasterWritVoucherMax=&AmountMin=&AmountMax=&PriceMin=&PriceMax=31000"
-    priceThershold : 31000
+    priceThershold : 32000
     minThershold : 23    
     
   - itemName: "Chromium"
