@@ -1,6 +1,7 @@
 import logging
 import random
 import smtplib
+import os
 import time
 import yaml
 import requests
@@ -12,7 +13,7 @@ from bs4 import BeautifulSoup
 # ==============================
 CONFIG_FILE = "eso-trade-items.yaml"
 LOG_FILE = "eso-trade-mon.log"
-
+smtp_password = os.getenv("SMTP_PASSWORD", "your_password_here")  # placeholder only
 with open(CONFIG_FILE, "r") as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
@@ -100,7 +101,7 @@ for idx, search_item in enumerate(config.get("esosearches", []), start=1):
             logging.info(f"Sending email to {to_addr} with message:\n{msg}")
             with smtplib.SMTP("smtp.live.com", 587) as server:
                 server.starttls()
-                server.login(from_addr, "demo_password")
+                server.login(from_addr, smtp_password)
                 server.sendmail(from_addr, to_addr, msg)
             logging.info("Email sent successfully.")
         except Exception as e:
