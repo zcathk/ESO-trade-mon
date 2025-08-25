@@ -11,7 +11,9 @@ To use this script, Python 3.x is needed to be installed on the system. It can b
 Also, install chrome,selenium and webdriver-manager. This example setup on Linux Ubuntu with
 1. Chrome - DEB Apps v139.0 Ref.: https://pkgs.org/download/google-chrome-stable
 2. selenium - check and upgrade version to match with chrome installed. Ref.:https://www.selenium.dev/blog/2025/
+```python
     pip3 install selenium==4.35.0 --break-system-packages
+```
 3. webdriver-manager . Ref.: https://pypi.org/project/webdriver-manager/
 4. Set an gmail app password for smtp. Ref.: https://myaccount.google.com/apppasswords
 
@@ -22,10 +24,12 @@ Input file: eso-trade-items.yml specify item name, URL and threshold
 2. URL : Copy the URL after your found your target item with max price filtered and sort by lastseen. (See sample URL parameter &SortBy=LastSeen&Order=desc)
 3. minThershold : send you alert only when that items appear within the minutes you want e.g. "240" mean last seen less than 240 minutes.
 
-```python
+
 To run the script, open your terminal and navigate to the directory where the eso-trade-price-alert file is located. Then run the following command:
+```bash
 source set_env.sh && python3 eso-trade-price-alert.py
-OR debug in vscode with .vscode/launch.json set 
 ```
+OR debug in vscode with .vscode/launch.json set 
+
 ## License
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
