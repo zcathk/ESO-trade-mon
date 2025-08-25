@@ -1,10 +1,12 @@
 # ESO-trade-mon
 Purpose: Search for latest price drop on specified items. So user can get the item with wishful price on time. 
+
 Scenario: Certain items are popular and price remain high. Occasionally discounted sales would appeared but it would be gone very soon.
+
 How it work: Run this tool to search for several targeted items and send you email when any sales shows up and alert you soon enough before it's gone.
 
 ## Installation
-To use this script, you need to have Python 3.x installed on your system. You can download the latest version of Python from the official website: "https://www.python.org/downloads/"
+To use this script, Python 3.x is needed to be installed on the system. It can be download the latest version of Python from the official website: "https://www.python.org/downloads/"
 
 Also, install chrome,selenium and webdriver-manager. This example setup on Linux Ubuntu with
 1. Chrome - DEB Apps v139.0 Ref.: https://pkgs.org/download/google-chrome-stable
@@ -16,9 +18,9 @@ Also, install chrome,selenium and webdriver-manager. This example setup on Linux
 ## Usage
 
 Input file: eso-trade-items.yml specify item name, URL and threshold
-    1. item name : For file readablelity only.
-    2. URL : Copy the URL after your found your target item with max price filtered and sort by lastseen. (See sample URL parameter &SortBy=LastSeen&Order=desc)
-    3. minThershold : send you alert only when that items appear within the minutes you want e.g. "240" mean last seen less than 240 minutes.
+1. item name : For file readablelity only.
+2. URL : Copy the URL after your found your target item with max price filtered and sort by lastseen. (See sample URL parameter &SortBy=LastSeen&Order=desc)
+3. minThershold : send you alert only when that items appear within the minutes you want e.g. "240" mean last seen less than 240 minutes.
 
 ```python
 To run the script, open your terminal and navigate to the directory where the eso-trade-price-alert file is located. Then run the following command:
