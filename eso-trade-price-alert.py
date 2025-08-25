@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
-import time,os,sys
+import time,os
 import eso_trade_utils
 
 # Main . Start with constants and var initialziation
@@ -27,7 +27,6 @@ logging.basicConfig(
     datefmt="%m/%d/%y-%I:%M:%S%p"
 )
 logging.info("===== LOG STARTING =====")
-sys.exit()
 # Initialize env var from .vscode\launch.json
 # OR run from cmd line > source set_env.sh && python3 eso-trade-price-alert.py
 # ==============================
