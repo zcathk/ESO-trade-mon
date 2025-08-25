@@ -27,8 +27,7 @@ logging.basicConfig(
     datefmt="%m/%d/%y-%I:%M:%S%p"
 )
 logging.info("===== LOG STARTING =====")
-# Initialize env var from .vscode\launch.json
-# OR run from cmd line > source set_env.sh && python3 eso-trade-price-alert.py
+# Initialize env var
 # ==============================
 from_gmail=os.getenv("FROM_GMAILADDR")
 from_credential=os.getenv("FROM_CREDENTIAL")
@@ -45,12 +44,9 @@ with open(CONFIG_FILE, "r") as f:
 # ==============================
 for idx, search_item in enumerate(config.get("esosearches", []), start=1):
     item_name = search_item["itemName"]
-    # Consider and alert only when item post recently. i.e. last seen by X minutes ago with min_threshold
     min_threshold = search_item["minThershold"]
-    # URL including filter(s) like max price 
     url = search_item["url"]
-
-    # Load the local HTML file.
+    
     driver.get(url)
     WebDriverWait(driver, 10).until(lambda d: d.execute_script("return document.readyState") == "complete")
     # Wait until browser fully rendered
