@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": "",
+            "env": {                
+                "FROM_GMAILADDR": "your_addr@gmail.com",
+                "FROM_CREDENTIAL": "your_app_password",
+                "TO_EMAILADDR": "your_alert@anymail.local"
+            }
+        }
+    ]
+}

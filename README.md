@@ -1,21 +1,29 @@
 # ESO-trade-mon
-Monitor multiple game items price drop under thershold and send alert
+Purpose: Search for latest price drop on specified items. So user can get the item with wishful price on time. 
+Scenario: Certain items are popular and price remain high. Occasionally discounted sales would appeared but it would be gone very soon.
+How it work: Run this tool to search for several targeted items and send you email when any sales shows up and alert you soon enough before it's gone.
 
 ## Installation
-
 To use this script, you need to have Python 3.x installed on your system. You can download the latest version of Python from the official website: "https://www.python.org/downloads/"
 
-You also need to install the Requests and BeautifulSoup libraries. You can install them using pip, the Python package manager, by running the following command in your terminal:
-
-```bash
-pip install requests beautifulsoup4
-```
+Also, install chrome,selenium and webdriver-manager. This example setup on Linux Ubuntu with
+1. Chrome - DEB Apps v139.0 Ref.: https://pkgs.org/download/google-chrome-stable
+2. selenium - check and upgrade version to match with chrome installed. Ref.:https://www.selenium.dev/blog/2025/
+    pip3 install selenium==4.35.0 --break-system-packages
+3. webdriver-manager . Ref.: https://pypi.org/project/webdriver-manager/
+4. Set an gmail app password for smtp. Ref.: https://myaccount.google.com/apppasswords
 
 ## Usage
 
+Input file: eso-trade-items.yml specify item name, URL and threshold
+    1. item name : For file readablelity only.
+    2. URL : Copy the URL after your found your target item with max price filtered and sort by lastseen. (See sample URL parameter &SortBy=LastSeen&Order=desc)
+    3. minThershold : send you alert only when that items appear within the minutes you want e.g. "240" mean last seen less than 240 minutes.
+
 ```python
-To run the script, open your terminal and navigate to the directory where the eso-trade-mon.py file is located. Then run the following command:
-python eso-trade-mon.py
+To run the script, open your terminal and navigate to the directory where the eso-trade-price-alert file is located. Then run the following command:
+source set_env.sh && python3 eso-trade-price-alert.py
+OR debug in vscode with .vscode/launch.json set 
 ```
 ## License
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
