@@ -18,8 +18,8 @@ Also, install chrome,selenium and webdriver-manager. This example setup on Linux
 
 ## Usage
 
-Input file: eso-trade-items.yml specify item name, URL and threshold
-1. item name : For file readablelity only.
+Wishlist input file: eso-trade-items.yml specify item name, URL and threshold
+1. item name : For input file readability only.
 2. URL : Copy the URL after your found your target item with max price filtered and sort by lastseen. (See sample URL parameter &SortBy=LastSeen&Order=desc)
 3. minThershold : send you alert only when that items appear within the minutes you want e.g. "240" mean last seen less than 240 minutes.
 
