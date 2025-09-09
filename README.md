@@ -1,5 +1,5 @@
 # ESO-trade-mon
-Purpose: Search for latest price drop on specified ESO game items. So you can get them with wishful price on time. 
+Purpose: Search for latest price drop on specified ESO game items and receive notification email. Schedule this program to run every minute for entire day, it will help you can get the item with wishful price on time while you are busy something else.
 
 Scenario: Certain items are popular and price remain high. Occasionally discounted sales would appeared but it would be gone very soon.
 This tool help search for several targeted items and send you email when any sales shows up. So you can get them before it's too late.
@@ -29,6 +29,10 @@ To run the script, open your terminal and navigate to the directory where the es
 source set_env.sh && python3 eso-trade-price-alert.py
 ```
 OR debug in vscode with .vscode/launch.json set 
+
+## Output
+  - Receving alert e-mail when any item found beyond thershold
+  - Log files are supporting the rule update and review
 
 ## License
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
